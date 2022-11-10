@@ -177,6 +177,8 @@ def parse_cmd_args():
                         help="Minimum verbosity level for logging.  Available "
                              "in ascending order: debug, info, warning, "
                              "error, critical).  The default is info.")
+    parser.add_argument("-u", "--url", type=str, default=None,
+                        help="Add your own test url.")
 
     parser.add_argument("-i", "--first-hop", type=str, default=None,
                         help="The 20-byte fingerprint of the Tor relay which "
